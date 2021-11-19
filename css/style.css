@@ -1,0 +1,151 @@
+/* Importação Fonte Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Importação Fonte Comic Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+:root {
+    /* color */
+    --baseDark: #1A2C40;
+    --base: #1565C0;
+    --baseLight: #538ACA;
+    --accent-10: #000;
+    --accent-9: #202020;
+    --accent-8: #282828;
+    --accent-7: #343434;
+    --accent-6: #484848;
+    --accent-5: #5B5B5B;
+    --accent-4: #6F6F6F;
+    --accent-3: #C7C7C7;
+    --accent-2: #DBDBDB;
+    --accent-1: #EBEBEB;
+    --accent-0: #fff;
+    --accent-green: #05C928;
+    --accent-greenDark: #04B023;
+    --accent-blue: #3B5998;
+    --accent-blueDark: #324A80;
+    --accent-purple: #C13584;
+    --accent-purpleDark: #A82D73;
+    /* typeface weight's */
+    --extrabold: 800;
+    --bold: 700;
+    --semibold: 600;
+    --medium: 500;
+    --regular: 400;
+    --light: 300;
+    /* pixels to rem */
+    --px64: 4rem;
+    --px48: 3rem;
+    --px36: 2.25em;
+    --px32: 2rem;
+    --px24: 1.5rem;
+    --px18: 1.125rem;
+    --px16: 1rem;
+    --px12: 0.750rem;
+    /* typeface's */
+    --poppins: Poppins, sans-serif;
+    --opens-sans: "Open Sans", sans-serif;
+    /* transition */
+    --transitionc: all 0.3s ease-out;
+}
+
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.015rem;
+}
+
+body{
+    background-color: #202020;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+label {
+    font-size: var(--px16);
+}
+/* --- */
+
+.btn__group{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+}
+.btn__others{
+    position: relative;
+}
+
+.btn__circle{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    color: #E4B55C;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+.btn__circle:hover{
+    color: #E3C88A;
+    background-color: var(--accent-1);
+}
+.btn__circle:active{
+    color: #E4B55C;
+    background-color: var(--accent-3);
+}
+
+.btn__circle.--top--right, .btn__circle.--top--left, .btn__circle.--left, .btn__circle.--right{
+    opacity: 0;
+}
+
+.btn__circle.--top--left{
+    transform: translate(-32px, -64px)
+}
+.btn__circle.--top--right{
+    transform: translate(32px, -64px);
+}
+.btn__circle.--left{
+    transform: translateX(-64px);
+}
+.btn__circle.--right{
+    transform: translateX(64px)
+}
+
+/* --- */
+
+
+/* media query */
+/* sm */
+@media (max-width: 767.98px) {
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    
+}
